@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surfvan.no</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a07bbf9774.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+    <header>
+
+
+        <img id="logo_image" src="logo.png" alt="Logo">
+        <h1 class="logo">Surfvan.no</h1>
+        <ul class="main_navi">
+            <li class="main_navi_item" onclick="dropdown_menu()"><i class="fa-solid fa-bars"></i></li>
+        </ul>
+
+
+    </header>
+
+
+
+    <main>
+
+
+        <div id="dropdown_menu">
+
+            <a href="/static/index.html"><h2>Våre biler</h2></a>
+            <a href="/static/terms.html"></a><h2>Leiebetingelser</h2>
+            <a href="/static/contact.html"></a><h2>Kundeservice</h2>
+
+        </div>
+
+
+        <div id="entries">
+
+            <div class="entry">
+                <img class="entry_image" src="peugeot_temporary.avif" alt="">
+                <h1 class="entry_title">Peugeot Partner 2022</h1>
+                <p class="entry_description">
+                    Peugeot Partner 2022 modell med soveplass til tre voksne.
+                    Kjøkken i bagasjerom og 190x100 cm lasterom.
+                </p>
+                <div class="entry_equipment">
+                    <ul>
+                        <li>3 Seter</li>
+                        <li>3 Soveplasser</li>
+                        <li>Kjøkken</li>
+                    </ul>
+                </div>
+                <h1 id="availability">Sjekk tilgjengelighet</h1>
+                <button id="entry_reserve_btn">Reserver</button>  
+            </div>
+
+
+            <div class="entry">
+                <img class="entry_image" src="peugeot_temporary.avif" alt="">
+                <h1 class="entry_title">Peugeot Partner 2022</h1>
+                <p class="entry_description">
+                    Peugeot Partner 2022 modell med soveplass til tre voksne.
+                    Kjøkken i bagasjerom og 190x100 cm lasterom.
+                </p>
+                <div class="entry_equipment">
+                    <ul>
+                        <li>3 Seter</li>
+                        <li>3 Soveplasser</li>
+                        <li>Kjøkken</li>
+                    </ul>
+                </div>
+                <button id="entry_reserve_btn">Reserver</button>  
+            </div>
+
+        </div>
+
+
+        <div id="footer">
+            <h3>Kontakt | Personvern</h3>
+        </div>
+        
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script>
+        config = {
+            mode: "range",
+        }
+
+        flatpickr("#availability", config);
+    </script>
+
+
+</body>
+
+
+
+</html>
